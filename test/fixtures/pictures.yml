@@ -4,10 +4,10 @@ one:
   id: MyString
   sent_date: MyString
   File_name: MyString
-  paid_amount: 
+  paid_amount: MyString
 
 two:
   id: MyString
   sent_date: MyString
   File_name: MyString
-  paid_amount: 
+  paid_amount: MyString

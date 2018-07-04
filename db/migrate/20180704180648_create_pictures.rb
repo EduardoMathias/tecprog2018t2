@@ -4,7 +4,7 @@ class CreatePictures < ActiveRecord::Migration[5.1]
       t.string :id
       t.string :sent_date
       t.string :File_name
-      t.int :paid_amount
+      t.string :paid_amount
 
       t.timestamps
     end
