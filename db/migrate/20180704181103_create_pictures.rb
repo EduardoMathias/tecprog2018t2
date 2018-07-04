@@ -1,10 +1,9 @@
 class CreatePictures < ActiveRecord::Migration[5.1]
   def change
     create_table :pictures do |t|
-      t.string :id
       t.string :sent_date
       t.string :File_name
-      t.string :paid_amount
+      t.string :paid_amount_string
 
       t.timestamps
     end
