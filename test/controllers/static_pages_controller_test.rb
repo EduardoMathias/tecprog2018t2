@@ -6,4 +6,9 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get hi" do
+    get static_pages_hi_url
+    assert_response :success
+  end
+
 end
