@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
-  get 'user/index'
 
-  get 'recipient/index'
-
-  get 'picture/index'
 
   resources :user
   resources :picture
@@ -14,5 +10,4 @@ Rails.application.routes.draw do
   root 'user#index'
   root 'picture#index'
   root 'recipient#index'
-  get  'user/index'
 end
