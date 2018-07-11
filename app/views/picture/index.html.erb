@@ -15,12 +15,12 @@
     <td><%= pic.id %></td>
     <td><%= pic.sent_date %></td>
     <td><%= pic.file_name%></td>
-    <td><%= link_to 'Show', pic %></td>
-    <td><%= link_to 'Edit', edit_pic_path(pic) %></td>
+    <td><%= link_to 'Show', picture %></td>
+    <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
   </tr>
 <% end %>
 </table>
 
 <br>
 
-<%= link_to 'New User', new_user_path %>
+<%= link_to 'New Picture', new_picture_path %>
