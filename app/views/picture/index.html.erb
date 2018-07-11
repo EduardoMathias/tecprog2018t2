@@ -1,2 +1,26 @@
 <h1>Picture#index</h1>
 <p>Find me in app/views/picture/index.html.erb</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Sent_date</th>
+      <th>File_name</th>
+    </tr>
+  </thead>
+
+<% @picture.each do |pic| %>
+  <tr>
+    <td><%= pic.id %></td>
+    <td><%= pic.sent_date %></td>
+    <td><%= pic.file_name%></td>
+    <td><%= link_to 'Show', pic %></td>
+    <td><%= link_to 'Edit', edit_pic_path(pic) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>
